@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+import QuoteBox from './components/quote_box/QuoteBox'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <QuoteBox />
   </React.StrictMode>,
   document.getElementById('root')
 );
