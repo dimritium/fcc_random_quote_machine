@@ -8,12 +8,19 @@
     border-radius: 0.2em;
 }
 
-#new-quote-btn {
-    text-align: right;
+#button-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.author {
-    text-align: right;
+.socialButton {
+    font-size: 25px;
+    padding: 10px 0px 0px 10px;
+}
+
+.below-quote-section {
+    /* text-align: right; */
     margin: 20px 0;
 }
 
@@ -22,15 +29,10 @@ html, body, #root, #root>div {
 }
 
 #env {
-    color: #61dafb;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #61dafb;
-  }
-
-  .example-appear {
-    opacity: 0.01;
+    transition: background-color 1s ease-in;
 }
 
 .text {
@@ -39,18 +41,20 @@ html, body, #root, #root>div {
     display: flex;
     align-items: baseline;
 }
-.example-appear.example-appear-active {
-    opacity: 1;
-    transition: opacity .5s ease-in;
-}
 
 #quoteIcon {
     padding: 10px;
 }
 
-/* #author {
-    font-family: cursive, sans-serif;
-} */
+#author {
+    text-align: right;
+    padding: 10px 0px;
+}
+
+#text {
+    animation: fadein 1.5s;
+    opacity: 1;
+}
 
 #new-quote {
     background-color: #fff;
@@ -62,4 +66,13 @@ html, body, #root, #root>div {
     outline: none;
     font-family: inherit;
     font-size: 16px;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }

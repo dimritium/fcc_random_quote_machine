@@ -3,7 +3,7 @@ import quotes from '../../quotes';
 import './QuoteBox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-// import ReactTransitionGroup from 'react-addons-transition-group';
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 const allQuotes = quotes.quotes;
 const randomMC = require('random-material-color');
@@ -13,7 +13,7 @@ class QuoteBox extends React.Component {
         super(props);
         this.state = {
             currQuote: {},
-            color: randomMC.getColor()
+            color: ""
         }
         this.refreshQuote = this.refreshQuote.bind(this);
     }
@@ -22,32 +22,35 @@ class QuoteBox extends React.Component {
         this.refreshQuote();
     }
 
-    componentDidUpdate() {
-        let color = randomMC.getColor();
-        document.getElementById("env").style.cssText = "background-color:"+ color + "; color: " + color;
-    }
-
     refreshQuote() {
         this.setState(({
-            currQuote: allQuotes[Math.ceil(Math.random() * allQuotes.length) - 1]
+            currQuote: allQuotes[Math.ceil(Math.random() * allQuotes.length) - 1],
+            color: randomMC.getColor(),
         }));
     }
 
     render() {
         const quoteIcon = <FontAwesomeIcon icon={faQuoteLeft} />
+        const twitterIcon = <FontAwesomeIcon icon={faTwitterSquare} />
         return (
-            <div id="env">
+            <div id="env" style={{
+                backgroundColor: this.state.color,
+                color: this.state.color
+            }}>
                 <div id="quote-box">
                     <div className="text">
                         <div id="quoteIcon">
                             <span>{quoteIcon}</span>
                         </div>
-                        <span id="text">{this.state.currQuote["quote"]}</span>
+                        <span key={this.state.currQuote["quote"]} id="text">{this.state.currQuote["quote"]}</span>
                     </div>
-                    <div className="author">
-                        <span id="author">{this.state.currQuote["author"]}</span>
+                    <div id="author">
+                        <span>{this.state.currQuote["author"]}</span>
                     </div>
-                    <div id="new-quote-btn">
+                    <div id="button-section">
+                        <div class="socialButton">
+                            <a href="twitter.com/intent/tweet" id="tweet-quote" style={{color: this.state.color}}>{twitterIcon}</a>
+                        </div>
                         <button id="new-quote" onClick={this.refreshQuote}>New quote</button>
                     </div>
                 </div>
