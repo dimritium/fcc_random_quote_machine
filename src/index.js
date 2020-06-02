@@ -8,7 +8,7 @@ import QuoteBox from './components/quote_box/QuoteBox'
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuoteBox />
+      <QuoteBox />
   </React.StrictMode>,
   document.getElementById('root')
 );
