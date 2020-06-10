@@ -51,11 +51,6 @@ html, body, #root, #root>div {
     padding: 10px 0px;
 }
 
-#text {
-    animation: fadein 1.5s;
-    opacity: 1;
-}
-
 #new-quote {
     background-color: #fff;
     border-style: none;
@@ -75,4 +70,8 @@ html, body, #root, #root>div {
     100% {
       opacity: 1;
     }
+}
+
+#text {
+    animation: fadein 1.5s;
 }
