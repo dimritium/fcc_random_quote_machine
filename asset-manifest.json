@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fcc_random_quote_machine/static/css/main.042e8638.chunk.css",
+    "main.css": "/fcc_random_quote_machine/static/css/main.63cb7b76.chunk.css",
     "main.js": "/fcc_random_quote_machine/static/js/main.e442831b.chunk.js",
     "main.js.map": "/fcc_random_quote_machine/static/js/main.e442831b.chunk.js.map",
     "runtime-main.js": "/fcc_random_quote_machine/static/js/runtime-main.52dd26f2.js",
@@ -8,15 +8,15 @@
     "static/js/2.7b9b2f29.chunk.js": "/fcc_random_quote_machine/static/js/2.7b9b2f29.chunk.js",
     "static/js/2.7b9b2f29.chunk.js.map": "/fcc_random_quote_machine/static/js/2.7b9b2f29.chunk.js.map",
     "index.html": "/fcc_random_quote_machine/index.html",
-    "precache-manifest.008f98abbd390611e89e797b56993a4e.js": "/fcc_random_quote_machine/precache-manifest.008f98abbd390611e89e797b56993a4e.js",
+    "precache-manifest.77e2312158f25e1459287b5881288d1a.js": "/fcc_random_quote_machine/precache-manifest.77e2312158f25e1459287b5881288d1a.js",
     "service-worker.js": "/fcc_random_quote_machine/service-worker.js",
-    "static/css/main.042e8638.chunk.css.map": "/fcc_random_quote_machine/static/css/main.042e8638.chunk.css.map",
+    "static/css/main.63cb7b76.chunk.css.map": "/fcc_random_quote_machine/static/css/main.63cb7b76.chunk.css.map",
     "static/js/2.7b9b2f29.chunk.js.LICENSE.txt": "/fcc_random_quote_machine/static/js/2.7b9b2f29.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.52dd26f2.js",
     "static/js/2.7b9b2f29.chunk.js",
-    "static/css/main.042e8638.chunk.css",
+    "static/css/main.63cb7b76.chunk.css",
     "static/js/main.e442831b.chunk.js"
   ]
 }
